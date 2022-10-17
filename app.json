@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "healthcareapp",
-    "slug": "healthcareapp",
-    "version": "1.0.0",
+    "name": "FreeCare MD",
+    "slug": "FreeCareMD",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,17 +17,32 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-      
+      "supportsTablet": true,
+      "bundleIdentifier":"com.FreeCareMD",
+      "config":{
+        "googleMapsApiKey": "AIzaSyAxlDQVWe8MGcERPt6fJMQseO-2TAONi7U"
+     }
     },
     "android": {
+      "package": "com.FreeCareMD",
+      "versionCode": 3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#EFEDDE"
+      },
+      "config":{
+         "googleMaps": { 
+            "apiKey": "AIzaSyAxlDQVWe8MGcERPt6fJMQseO-2TAONi7U"
+          }
       }
     },
     "web": {
       "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d979e6bf-c506-4d0a-bf64-599360281867"
+      }
     }
   }
 }

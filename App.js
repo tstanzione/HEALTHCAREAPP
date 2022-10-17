@@ -10,6 +10,7 @@ import Grid from "./Screens/Grid.js";
 import MapNew from "./Screens/MapNew.js";
 import Details from "./Screens/Details.js";
 import OurMission from "./Screens/OurMission.js";
+import Disclaimer from "./Screens/Disclaimer.js";
 
 const Stack = createNativeStackNavigator();
 
@@ -73,6 +74,15 @@ export default function App() {
           component={OurMission}
           options={{
             title: "OurMission"
+          }}
+        >         
+        </Stack.Screen>
+
+        <Stack.Screen
+          name="Disclaimer"
+          component={Disclaimer}
+          options={{
+            title: "Disclaimer"
           }}
         >         
         </Stack.Screen>

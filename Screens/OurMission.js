@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-
+import Disclaimer from "./Disclaimer.js";
 import {  
     View, 
     Text, 
     StyleSheet,
     ScrollView, 
-    Image
+    Image,    
+    TouchableOpacity,
+    TouchableHighlight
+
 } from "react-native";
 
 let mission = ""  
@@ -50,7 +53,13 @@ let mission = ""
           <Text>Sincerally,</Text>
           <Text></Text>
           <Text>Thais and Lucia</Text>
-        
+          <Text></Text> 
+          <Text></Text>
+          <View style={styles.center}>
+              <TouchableOpacity style={styles.link} onPress={() => {this.props.navigation.navigate("Disclaimer")}}>
+                <Text style={styles.link}>Disclaimer</Text>
+              </TouchableOpacity>
+          </View>
         </ScrollView>
       </View>
     );
@@ -90,6 +99,13 @@ const styles = StyleSheet.create({
   value: {
     fontSize: 16,
     color: '#666',
+    textAlign: 'center',
+  },
+  link: {
+    fontSize: 10,
+    fontWeight: 'bold',
+    marginBottom: 5,
+    color: '#2e64e5',
     textAlign: 'center',
   },
 });
